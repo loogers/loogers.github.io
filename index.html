@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/tailwind.min.css" />
   <title>Welcome to Loogers...</title>
 </head>
-<body>
-  <h1>Welcome to Loogers...</h1>
+
+<style>
+  .gradient {
+    background: linear-gradient(90deg, #1E3A8A 0%, #3B82F6 100%);
+  }
+
+  .text-font {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+</style>
+
+<body class="text-font text-white">
+  <!--Nav-->
+  <nav id="nav" class="fixed w-full z-30 top-0 text-white">
+    <div class="flex items-center w-full mx-auto px-4 py-3 sm:px-6 lg:px-8 space-x-2">
+      <a href="#"><img class="mr-10" src="images/logo.svg" alt="Workflow"></a>
+      <a href="#" class="bg-blue-700 text-white text-sm font-medium px-3 py-2 rounded-md">Home</a>
+      <a href="#"
+        class="text-gray-300 hover:bg-blue-500 hover:text-white text-sm font-medium px-3 py-2 rounded-md">Link</a>
+      <a href="#"
+        class="text-gray-300 hover:bg-blue-500 hover:text-white text-sm font-medium px-3 py-2 rounded-md">Link</a>
+      <!--<div class="absolute origin-top-right right-0 mx-auto px-4 sm:px-6 lg:px-8 space-x-2">
+        <a href="#"
+          class="text-gray-300 hover:bg-blue-500 hover:text-white text-sm font-medium px-3 py-2 rounded-md">Menu</a>
+      </div>-->
+    </div>
+    <hr class="border-1 border-gray-100 opacity-25 my-0 py-0" />
+  </nav>
+
+  <!--Header Container-->
+  <header class="gradient flex flex-wrap flex-col md:flex-row items-center mx-auto pt-20 px-4 py-3 sm:px-6 lg:px-8">
+    <!--Left Col-->
+    <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-gray-100 text-center md:text-left">
+      <h1 class="my-4 text-5xl font-bold leading-tight">Main Hero Message to sell yourself...</h1>
+      <p class="leading-normal text-2xl mb-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
+        nobis!</p>
+      <button
+        class="bg-red-500 px-4 py-2 hover:bg-red-400 hover:shadow-xl text-gray-100 font-bold rounded-full">Subscribe</button>
+
+    </div>
+    <!--Right Col-->
+    <div class="w-full md:w-3/5 py-6 text-gray-900 text-center">
+      <img class="w-full" src="images/atención_al_cliente.svg" alt="">
+    </div>
+  </header>
+
+  <!--3 Col Section-->
+  <section class="bg-white border-b mx-auto px-4 py-3 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap mx-auto pt-4 pb-12">
+      <h1 class="text-5xl font-bold leading-tight text-center text-gray-800 underline w-full my-2">
+        Title
+      </h1>
+
+      <div class="flex-col w-full sm:w-1/3 mt-6 p-6">
+        <div class="flex-1 p-6 text-gray-900 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+          <div class="flex items-center justify-center">
+            <img src="images/workspace_icon.svg" alt="">
+          </div>
+          <h3 class="font-bold text-xl text-gray-800 w-full p-2">
+            Lorem ipsum dolor sit amet.
+          </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, veniam? Earum eveniet tenetur
+            consectetur vel?</p>
+          <div class="flex items-center justify-center p-6">
+            <button
+              class="bg-blue-500 px-4 py-1 hover:bg-blue-400 hover:shadow-xl font-bold text-gray-100 rounded-full">Action</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-col w-full sm:w-1/3 mt-6 p-6">
+        <div class="flex-1 p-6 text-gray-900 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+          <div class="flex items-center justify-center">
+            <img src="images/form_icon.svg" alt="">
+          </div>
+          <h3 class="font-bold text-xl text-gray-800 w-full p-2">
+            Lorem ipsum dolor sit amet.
+          </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat rem, vel facilis veniam nemo!</p>
+          <div class="flex items-center justify-center p-6">
+            <button
+              class="bg-blue-500 px-4 py-1 hover:bg-blue-400 hover:shadow-xl font-bold text-gray-100 rounded-full">Action</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-col w-full sm:w-1/3 mt-6 p-6">
+        <div class="flex-1 p-6 text-gray-900 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+          <div class="flex items-center justify-center">
+            <img src="images/location_icon.svg" alt="">
+          </div>
+          <h3 class="font-bold text-xl text-gray-800 w-full p-2">
+            Lorem ipsum dolor sit amet.
+          </h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consequuntur, totam facere et impedit
+            eligendi?</p>
+          <div class="flex items-center justify-center p-6">
+            <button
+              class="bg-blue-500 px-4 py-1 hover:bg-blue-400 hover:shadow-xl font-bold text-gray-100 rounded-full">Action</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--2 Col Section-->
+  <section class="bg-white border-b mx-auto px-4 py-3 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap mx-auto pt-4 pb-12">
+      <div class="flex-col w-full sm:w-1/2 mt-6">
+        <div class="align-middle">
+          <img src="images/colaborar_trabajo.svg" alt="">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mt-3 mb-3">
+            Lorem ipsum dolor sit amet
+          </h3>
+          <p class="text-gray-600 mb-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia optio neque doloribus harum sed inventore
+            minus! Odit amet asperiores debitis.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-col w-full sm:w-1/2 mt-6">
+        <div class="align-middle">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+            Lorem ipsum dolor sit amet
+          </h3>
+          <p class="text-gray-600 mb-8">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et voluptas perferendis corrupti, earum quasi sed
+            quis porro pariatur cumque placeat.
+          </p>
+          <img src="images/clasificación.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Call Section-->
+  <section class="gradient mx-auto text-center py-6">
+    <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white underline">
+      Call to Action
+    </h1>
+    <h3 class="my-4 text-3xl leading-tight">
+      Main Hero Message to sell yourself!
+    </h3>
+  </section>
+
+  <footer class="mx-auto font-bold text-center">
+    <hr class="border-1 border-blue-600 opacity-75 my-0 py-0" />
+    <div class="gradient p-6">
+      Made by:
+      <a class="bg-red-600 hover:bg-red-500 rounded-full text-white px-3 py-1"
+        href="https://loogers.github.io/">Loogers.</a>
+    </div>
+  </footer>
+
+  <script>
+    var scrollpos = window.scrollY;
+    var nav = document.getElementById("nav");
+
+    document.addEventListener("scroll", function () {
+      /*Apply classes for slide in bar*/
+      scrollpos = window.scrollY;
+
+      if (scrollpos > 10) {
+        nav.classList.add("bg-blue-600");
+        nav.classList.add("shadow");
+      } else {
+        nav.classList.remove("bg-blue-600");
+        nav.classList.remove("shadow");
+      }
+    })
+  </script>
 </body>
+
 </html>
